@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/s"
+>
+
+
+    <EditText
+
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/usr_selector"
+        android:drawablePadding="12dp"
+        android:id="@+id/usr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+
+
+        />
+
+    <EditText
+        android:background="@drawable/custom_edit_text_cut"
+        android:drawableStart="@drawable/pass_selector"
+        android:drawablePadding="12dp"
+        android:id="@+id/passw1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/usr1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/usr1"
+        app:layout_constraintTop_toBottomOf="@+id/usr1"
+        app:layout_constraintVertical_bias="0.05"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit  "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/passw1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/passw1"
+        app:layout_constraintTop_toBottomOf="@+id/passw1"
+        app:layout_constraintVertical_bias="0.097"
+        android:backgroundTint="@color/marine"
+        android:backgroundTintMode="screen"
+        android:textColor="@color/golden"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/passw1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passw1"
+        app:layout_constraintTop_toBottomOf="@+id/passw1"
+        app:layout_constraintVertical_bias="0.097"
+        android:backgroundTint="@color/marine"
+        android:textColor="@color/golden"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="261dp"
+        android:layout_height="195dp"
+        app:layout_constraintBottom_toTopOf="@+id/usr1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tofield2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

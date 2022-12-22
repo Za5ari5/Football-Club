@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/s"
+>
+
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_edit_text_cut"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.292"
+
+        />
+
+    <EditText
+            android:background="@drawable/custom_edit_text_cut"
+            android:id="@+id/sname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Second Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/fname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fname"
+            app:layout_constraintTop_toBottomOf="@+id/fname"
+            app:layout_constraintVertical_bias="0.025"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+
+        <EditText
+            android:background="@drawable/custom_edit_text_cut"
+            android:id="@+id/aage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="date"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/sname"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/sname"
+            app:layout_constraintTop_toBottomOf="@+id/sname"
+            app:layout_constraintVertical_bias="0.019"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+
+        <EditText
+            android:background="@drawable/custom_edit_text_cut"
+            android:id="@+id/eemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/aage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/aage"
+            app:layout_constraintTop_toBottomOf="@+id/aage"
+            app:layout_constraintVertical_bias="0.022"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+        <EditText
+            android:background="@drawable/custom_edit_text_cut"
+            android:id="@+id/passwrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/eemail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/eemail"
+            app:layout_constraintTop_toBottomOf="@+id/eemail"
+            app:layout_constraintVertical_bias="0.028"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"/>
+
+    <EditText
+
+        android:background="@drawable/custom_edit_text_cut"
+        android:id="@+id/usrname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/passwrd"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwrd"
+        app:layout_constraintTop_toBottomOf="@+id/passwrd"
+        app:layout_constraintVertical_bias="0.063"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/usrname"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@+id/usrname"
+        app:layout_constraintTop_toBottomOf="@+id/usrname"
+        app:layout_constraintVertical_bias="0.152"
+        android:backgroundTint="@color/marine"
+        android:textColor="@color/golden"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Registration-"
+        app:layout_constraintBottom_toTopOf="@+id/fname"
+        app:layout_constraintEnd_toEndOf="@+id/fname"
+        app:layout_constraintStart_toStartOf="@+id/fname"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/marine"
+        android:defaultFocusHighlightEnabled="true"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
